@@ -1,7 +1,29 @@
 <!DOCTYPE html>
 <html>
 <body>
-<style>
+	<head>
+  <script>
+  document.addEventListener('touchmove', function (event) {
+      if (event.scale !== 1) { event.preventDefault(); }
+  }, false);
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
+  <style>
+    * {
+	font-family: Arial, sans;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+h1, h2 {
+	margin: 1em 0 0 0;
+	text-align: center;
+}
+h2 {
+	margin: 0 0 1em 0;
+}
+
 #container {
     margin: 0 auto;
     width: 50%;
