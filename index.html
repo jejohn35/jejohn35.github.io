@@ -1,1 +1,155 @@
-"hello world" 
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+#container {
+    margin: 0 auto;
+    width: 50%;
+}
+#accordion input {
+	display: none;
+}
+#accordion label {
+	background: #eee;
+	border-radius: .25em;
+	cursor: pointer;
+	display: block;
+	margin-bottom: .125em;
+	padding: .25em 1em;
+	z-index: 20;
+}
+#accordion label:hover {
+	background: #ccc;
+}
+
+#accordion input:checked + label {
+	background: #ccc;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: white;
+	margin-bottom: 0;
+}
+#accordion article {
+	background: #f7f7f7;
+	height:0px;
+	overflow:hidden;
+	z-index:10;
+}
+#accordion article p {
+	padding: 1em;
+}
+#accordion input:checked article {
+}
+#accordion input:checked ~ article {
+	border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+	height: auto;
+	margin-bottom: .125em;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+<img src="https://2jsqmx3urpic3hm7hj2c4vvi-wpengine.netdna-ssl.com/files/asu-logo.png" width="500" height="300">
+
+<h1 style="color:red;">Julian Johnson</h1>
+<address>
+  <p><a href= "tel:951-227-5960"> 951-227-5960 </a> </p>
+
+  <p><a href="https://goo.gl/maps/t7i4Xnzb8ihtksig7">Address</a></p>
+
+  <p><a href="mailto:jejohn35@asu.edu"> jejohn35@asu.edu </a></p>
+  <hr>
+</address>
+
+<h2>Objective Education</h2>
+<section id="accordion">
+  <div>
+    <input type="checkbox"
+           id="check-1" />
+    <label for="check-1">Objective Education</label>
+    <article>
+      <p>
+
+      <table style="width:100%">
+
+
+        <tr>
+          <td>Skills</td>
+          <td>Interactive Learning</td>
+          <td>Design Practices</td>
+        </tr>
+        <tr>
+          <td>Writting Skills</td>
+          <td>Networking</td>
+          <td>Management</td>
+        </tr>
+        <tr>
+          <td>Meet Personal Milestones</td>
+          <td>Acquire Knowledge</td>
+          <td>Communication</td>
+        </tr>
+      </table>
+      </p>
+    </article>
+  </div>
+
+
+  <h2>Refrences</h2>
+  <section id="accordion">
+    <div>
+      <input type="checkbox"
+             id="check-3" />
+      <label for="check-3">Refrences</label>
+      <article>
+        <p>
+
+        <table style.css="width:100%">
+
+
+
+
+          <tr>
+            <td>Jody Miele</td>
+            <td>Megan Workman</td>
+            <td>Damaris Redgray</td>
+          </tr>
+        </table>
+        </p>
+      </article>
+    </div>
+
+
+    <hr>
+    <h2>Experience</h2>.
+
+    <div>
+      <input type="checkbox"
+             id="check-2" />
+      <label for="check-2">Experience</label>
+      <article>
+        <p>
+
+          <table style.css="width:100%">
+            <ol>
+        <p> <li>Chick-fill-a Employee</li> </p>
+        <p> <li>Solar Solutions telemarketer</li> </p>
+        <p> <li>Six Pack Recycling Assistant</li> </p>
+        </ol>
+        </p>
+      </article>
+
+
+    </div>
+
+
+
+    <hr>
+
+
+
+
+</body>
+</html>
